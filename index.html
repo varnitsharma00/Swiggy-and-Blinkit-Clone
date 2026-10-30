@@ -4,201 +4,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swiggy - Food Delivery</title>
+    <title>Swiggy - Food and Grocery Delivery</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <header class="hero">
         <nav class="navbar">
-            <div class="logo">Swiggy<span>.</span></div>
-
-            <div class="location">
-                <span>📍</span>
-                <div>
-                    <h4>Other</h4>
-                    <p>Meerut, Uttar Pradesh</p>
-                </div>
+            <div class="logo">
+                <span class="logo-icon">S</span>
+                Swiggy
             </div>
 
-            <ul class="nav-links">
-                <li><a href="#">Swiggy Corporate</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="#">Offers</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Sign In</a></li>
-                <li><a href="#">🛒 Cart</a></li>
-            </ul>
+            <div class="nav-links">
+                <a href="#">Swiggy Corporate</a>
+                <a href="#">Partner with us</a>
+                <a href="#" class="get-app">Get the App ↗</a>
+                <a href="#" class="sign-in">Sign in</a>
+            </div>
         </nav>
+
+        <div class="hero-content">
+            <h1>Order food & groceries. Discover<br> best restaurants. Swiggy it!</h1>
+
+            <div class="search-container">
+                <div class="search-input">
+                    <span>📍</span>
+                    <input type="text" placeholder="Enter your delivery location">
+                    <span>⌄</span>
+                </div>
+
+                <div class="search-input restaurant-search">
+                    <input type="text" placeholder="Search for restaurant, item or more">
+                    <span>⌕</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-decoration left-decoration">
+            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500" alt="Fresh vegetables">
+        </div>
+
+        <div class="hero-decoration right-decoration">
+            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=500" alt="Sushi">
+        </div>
+
+        <div class="service-cards">
+            <div class="service-card">
+                <div class="service-text">
+                    <h2>FOOD DELIVERY</h2>
+                    <p>FROM RESTAURANTS</p>
+                    <span>UPTO 60% OFF</span>
+                </div>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300" alt="Food delivery">
+                </div>
+                <a href="#" class="arrow">➜</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-text">
+                    <h2>INSTAMART</h2>
+                    <p>INSTANT GROCERY</p>
+                    <span>UPTO 60% OFF</span>
+                </div>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=300" alt="Groceries">
+                </div>
+                <a href="#" class="arrow">➜</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-text">
+                    <h2>DINEOUT</h2>
+                    <p>EAT OUT & SAVE MORE</p>
+                    <span>UPTO 50% OFF</span>
+                </div>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=300" alt="Restaurant">
+                </div>
+                <a href="#" class="arrow">➜</a>
+            </div>
+        </div>
     </header>
 
     <main>
 
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Order food & groceries. Discover best restaurants.</h1>
-                <p>Delicious food delivered to your doorstep.</p>
-
-                <div class="search-box">
-                    <input type="text" placeholder="Enter your delivery location">
-                    <input type="text" placeholder="Search for restaurant, item or more">
-                    <button>Search</button>
-                </div>
-            </div>
-
-            <div class="hero-images">
-                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500" alt="Burger">
-                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500" alt="Pizza">
-            </div>
-        </section>
-
         <section class="food-section">
             <div class="section-heading">
-                <h2>What's on your mind?</h2>
+                <h3>Order our best food options</h3>
+                <div class="slider-buttons">
+                    <button>‹</button>
+                    <button>›</button>
+                </div>
             </div>
 
-            <div class="food-categories">
+            <div class="food-list">
+
                 <div class="food-item">
-                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300" alt="Burger">
-                    <h3>Burgers</h3>
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=250" alt="North Indian">
+                    <p>North Indian</p>
                 </div>
 
                 <div class="food-item">
-                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=300" alt="Pizza">
-                    <h3>Pizza</h3>
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=250" alt="Pizza">
+                    <p>Pizza</p>
                 </div>
 
                 <div class="food-item">
-                    <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300" alt="Noodles">
-                    <h3>Noodles</h3>
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=250" alt="Burger">
+                    <p>Burger</p>
                 </div>
 
                 <div class="food-item">
-                    <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=300" alt="Biryani">
-                    <h3>Biryani</h3>
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=250" alt="Cake">
+                    <p>Cake</p>
                 </div>
 
                 <div class="food-item">
-                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300" alt="North Indian">
-                    <h3>North Indian</h3>
+                    <img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?w=250" alt="Biryani">
+                    <p>Biryani</p>
                 </div>
 
                 <div class="food-item">
-                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300" alt="Desserts">
-                    <h3>Desserts</h3>
+                    <img src="https://images.unsplash.com/photo-1553909489-cd47e0ef937f?w=250" alt="Rolls">
+                    <p>Rolls</p>
                 </div>
 
                 <div class="food-item">
-                    <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=300" alt="Sandwich">
-                    <h3>Sandwich</h3>
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=250" alt="Desserts">
+                    <p>Desserts</p>
                 </div>
+
+                <div class="food-item">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=250" alt="South Indian">
+                    <p>South Indian</p>
+                </div>
+
+                <div class="food-item">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=250" alt="Paratha">
+                    <p>Paratha</p>
+                </div>
+
+                <div class="food-item">
+                    <img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=250" alt="Pasta">
+                    <p>Pasta</p>
+                </div>
+
+                <div class="food-item">
+                    <img src="https://images.unsplash.com/photo-1501446529957-6226bd447c46?w=250" alt="Ice Cream">
+                    <p>Ice Cream</p>
+                </div>
+
+                <div class="food-item">
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=250" alt="Pastry">
+                    <p>Pastry</p>
+                </div>
+
+                <div class="food-item">
+                    <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=250" alt="Rasmalai">
+                    <p>Rasmalai</p>
+                </div>
+
+                <div class="food-item">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=250" alt="Coffee">
+                    <p>Coffee</p>
+                </div>
+
             </div>
         </section>
 
-        <section class="restaurant-section">
+        <section class="grocery-section">
             <div class="section-heading">
-                <h2>Top restaurant chains in your city</h2>
+                <h3>Shop groceries on Instamart</h3>
+                <div class="slider-buttons">
+                    <button>‹</button>
+                    <button>›</button>
+                </div>
             </div>
 
-            <div class="restaurant-container">
+            <div class="grocery-list">
 
-                <div class="restaurant-card">
-                    <div class="restaurant-image">
-                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500" alt="Burger">
-                        <span class="offer">50% OFF</span>
+                <div class="grocery-item">
+                    <div class="grocery-image">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=300" alt="Fresh Vegetables">
                     </div>
-                    <div class="restaurant-info">
-                        <h3>Burger King</h3>
-                        <p>⭐ 4.3 · 25-30 mins</p>
-                        <p>Burgers, Fast Food</p>
-                        <p>₹150 for two</p>
-                    </div>
+                    <p>Fresh<br>Vegetables</p>
                 </div>
 
-                <div class="restaurant-card">
-                    <div class="restaurant-image">
-                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500" alt="Pizza">
-                        <span class="offer">40% OFF</span>
+                <div class="grocery-item">
+                    <div class="grocery-image">
+                        <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=300" alt="Fresh Fruits">
                     </div>
-                    <div class="restaurant-info">
-                        <h3>Pizza Hut</h3>
-                        <p>⭐ 4.1 · 30-35 mins</p>
-                        <p>Pizza, Italian</p>
-                        <p>₹250 for two</p>
-                    </div>
+                    <p>Fresh Fruits</p>
                 </div>
 
-                <div class="restaurant-card">
-                    <div class="restaurant-image">
-                        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=500" alt="Noodles">
-                        <span class="offer">60% OFF</span>
+                <div class="grocery-item">
+                    <div class="grocery-image">
+                        <img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?w=300" alt="Dairy Products">
                     </div>
-                    <div class="restaurant-info">
-                        <h3>Chinese Wok</h3>
-                        <p>⭐ 4.2 · 20-30 mins</p>
-                        <p>Chinese, Asian</p>
-                        <p>₹200 for two</p>
-                    </div>
+                    <p>Dairy, Bread<br>and Eggs</p>
                 </div>
 
-                <div class="restaurant-card">
-                    <div class="restaurant-image">
-                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500" alt="Biryani">
-                        <span class="offer">30% OFF</span>
+                <div class="grocery-item">
+                    <div class="grocery-image">
+                        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=300" alt="Rice">
                     </div>
-                    <div class="restaurant-info">
-                        <h3>Biryani House</h3>
-                        <p>⭐ 4.5 · 25-35 mins</p>
-                        <p>Biryani, Mughlai</p>
-                        <p>₹180 for two</p>
-                    </div>
+                    <p>Rice, Atta and<br>Dals</p>
                 </div>
 
-            </div>
-        </section>
+                <div class="grocery-item">
+                    <div class="grocery-image">
+                        <img src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=300" alt="Masalas">
+                    </div>
+                    <p>Masalas and<br>Dry Fruits</p>
+                </div>
 
-        <section class="app-banner">
-            <div>
-                <h2>Get the Swiggy App</h2>
-                <p>Order your favourite food anytime, anywhere.</p>
-            </div>
-            <div class="app-buttons">
-                <a href="#">Google Play</a>
-                <a href="#">App Store</a>
+                <div class="grocery-item">
+                    <div class="grocery-image">
+                        <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=300" alt="Oils">
+                    </div>
+                    <p>Oils and Ghee</p>
+                </div>
+
+                <div class="grocery-item">
+                    <div class="grocery-image">
+                        <img src="https://images.unsplash.com/photo-1621939514649-280e2aa7b5c2?w=300" alt="Snacks">
+                    </div>
+                    <p>Munchies</p>
+                </div>
+
+                <div class="grocery-item">
+                    <div class="grocery-image">
+                        <img src="https://images.unsplash.com/photo-1580913428735-bd3c269d6a82?w=300" alt="Beverages">
+                    </div>
+                    <p>Beverages</p>
+                </div>
+
             </div>
         </section>
 
     </main>
-
-    <footer>
-        <div class="footer-content">
-            <div>
-                <h2 class="footer-logo">Swiggy<span>.</span></h2>
-                <p>© 2026 Swiggy Limited</p>
-            </div>
-
-            <div>
-                <h3>Company</h3>
-                <a href="#">About Us</a>
-                <a href="#">Careers</a>
-                <a href="#">Team</a>
-            </div>
-
-            <div>
-                <h3>Contact Us</h3>
-                <a href="#">Help & Support</a>
-                <a href="#">Partner With Us</a>
-                <a href="#">Ride With Us</a>
-            </div>
-
-            <div>
-                <h3>Legal</h3>
-                <a href="#">Terms & Conditions</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Cookie Policy</a>
-            </div>
-        </div>
-    </footer>
 
 </body>
 </html>
